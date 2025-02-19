@@ -1,7 +1,7 @@
 let pokemons = [];
 const poke_container = document.getElementById('poke_container');
 const url = "https://pokeapi.co/api/v2/pokemon";
-const pokemons_number = 500;
+const pokemons_number = 300;
 const search = document.getElementById("search");
 const  form = document.getElementById("form");
 
@@ -44,9 +44,9 @@ function createPokemonCard(pokemon) {
     const poke_types = pokemon.types.map((el) => el.type.name).slice(0, 1);
     const name = pokemon.name[0].toUpperCase() + pokemon.name.slice(1);
     const poke_stat = pokemon.stats.map((el) => el.stat.name)
-    const stats = poke_stat.slice(0, 3);
+    const stats = poke_stat.slice(0, 6);
     const base_value = pokemon.stats.map((el) => el.base_stat);
-    const base_stat = base_value.slice(0, 3);
+    const base_stat = base_value.slice(0, 6);
 
     const stat = stats.map((stat) => {
         return `<li class="names">${stat}</li>`;
@@ -118,7 +118,7 @@ const updateComparison = () => {
     });
     comparisonHTML += `</tr>`;
 
-    const statsNames = ['HP', 'Attack', 'Defense'];
+    const statsNames = ['HP', 'Attack', 'Defense', 'Special-attack', 'Special-defense', 'Speed'];
     statsNames.forEach((statName, index) => {
         comparisonHTML += `<tr><td>${statName}</td>`;
         
