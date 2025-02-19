@@ -1,10 +1,10 @@
 :root{
     --gradient: linear-gradient(
         90deg,
-        #cbcbb1 0%, 
-        #073179 100%
+        #ffffff 0%, 
+        #0e1bcf 100%
     );
-    }
+}
 
 *{
     box-sizing: border-box;
@@ -21,17 +21,35 @@ body{
     padding: 0 20px;
 }
 
-a{
-    font-size: 5rem;
+h1{
+    font-size: 6rem;
     margin-top: 2rem;
-    text-decoration: none;
-    color: #8b0606;
+    color: #000000;
     font-weight: 600;
     letter-spacing: 2px;
     transition: color 0.3s;
-    font-family: fantasy;
+    font-family: initial ;
+    font-style: bold;
+    background:  linear-gradient(270deg, rgb(250, 250, 250) 0%,  rgb(199, 15, 9) 100%);
+    width: 100%;
+    
+    padding-left: 2%;
     
 }
+
+a{
+    font-size: 2rem;
+    color: #000000;
+    transition: color 0.3s;
+    font-weight: 999;
+    background:  linear-gradient(0deg, rgb(250, 250, 250) 52%, rgb(8, 8, 8) 48%, rgb(199, 15, 9) 58%);
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    border: 3px solid black;
+    border-radius: 250px ;
+    }
 
 
 h2{
@@ -51,6 +69,7 @@ h2{
 }
 
 .pokemon{
+    border: 10px solid rgb(226, 169, 13);
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.9);
     margin: 5px;
@@ -58,7 +77,9 @@ h2{
     text-align: center;
     position: relative;
     overflow: hidden;
-    background-color: rgb(185, 136, 2);
+    background-color: #d65b14;
+    background: linear-gradient(200deg, rgb(14, 11, 240) 0%, rgb(192, 109, 70) 100%);
+    
 }
 
 .pokemon:hover {
@@ -67,15 +88,18 @@ h2{
 }
 
 .pokemon .img-container{
-    width: 120px;
-    height: 120px;
+    width: 100%;
+    height: 130px;
     text-align: center;
+    border: solid #df7233;
+    background: linear-gradient(180deg, rgb(87, 205, 252) 50%, rgb(3, 167, 16) 50%);
+   
     }
 
 .pokemon .img-container img{
-    margin-top: 20px;
     max-width: 90%;
     filter: drop-shadow(0 5px 3px black);
+    width: 150px;
 }
 
 .pokemon .info{
@@ -84,13 +108,12 @@ h2{
 
 .pokemon .number{
     background-color: #0f0779;
-    border-radius: 0;
+    border-radius: 0px;
     position: absolute;
     top: 0;
-    left: 0;
-    font-size: 1.1rem;
+    right: 0;
+    font-size: .75rem;
     font: bold;
-    width: 100%;
     padding: 5px;
     
 }
@@ -190,6 +213,7 @@ h2{
     border-radius: 5px;
     width: 80%;
     overflow-x: auto;
+    background: linear-gradient(180deg, rgb(226, 21, 21) 0%, rgb(236, 197, 19) 100%);
 }
 
 #comparison-container table {
@@ -199,7 +223,7 @@ h2{
 
 #comparison-container th, #comparison-container td {
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #7c6c6c;
     text-align: center;
     
 }
@@ -209,7 +233,7 @@ h2{
 }
 
 .compare-btn{
-    background-color: #b34506;
+    background-color: #c29b85;
     border: none;
     border-radius: 30px;
     padding-left: 15px;

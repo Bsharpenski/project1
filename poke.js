@@ -1,7 +1,7 @@
 let pokemons = [];
 const poke_container = document.getElementById('poke_container');
 const url = "https://pokeapi.co/api/v2/pokemon";
-const pokemons_number = 800;
+const pokemons_number = 500;
 const search = document.getElementById("search");
 const  form = document.getElementById("form");
 
