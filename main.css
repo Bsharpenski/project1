@@ -44,7 +44,7 @@ h2{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    margin-top:20px;
     gap: 20px;
     max-width: 1200px;
     width: 100%;
@@ -53,13 +53,12 @@ h2{
 .pokemon{
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.9);
-    border-top: 1px solid #d6c887;
-    margin: 20px;
+    margin: 5px;
     padding: 20px;
     text-align: center;
     position: relative;
     overflow: hidden;
-    background-color: gray;
+    background-color: rgb(185, 136, 2);
 }
 
 .pokemon:hover {
@@ -71,7 +70,7 @@ h2{
     width: 120px;
     height: 120px;
     text-align: center;
-}
+    }
 
 .pokemon .img-container img{
     margin-top: 20px;
@@ -80,18 +79,20 @@ h2{
 }
 
 .pokemon .info{
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 .pokemon .number{
-    background-color: rgb(37, 42, 121);
-    border-radius: 10px 0 10px;
+    background-color: #0f0779;
+    border-radius: 0;
     position: absolute;
-    top: -1px;
+    top: 0;
     left: 0;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font: bold;
-    padding: 5px 10px;
+    width: 100%;
+    padding: 5px;
+    
 }
 
 .pokemon .name{
@@ -113,11 +114,11 @@ h2{
     bottom: 0;
     left: 0;
     right: 0;
-    transform: translateY(101%);
+    transform: translateY(90%);
     transition: 0.3s ease-in;
     overflow: auto;
-    height: 85%;
-    background-color: rgb(63, 85, 134);
+    height: 71%;
+    background-color: #0f0779;
     color: rgb(219, 217, 196);
     text-shadow: #010d22;
 }
@@ -127,14 +128,15 @@ h2{
 }
 
 .pokemon:hover .stats{
-    transform: translateY(0);
+    transform: translateY(-100px);
+    padding-top: 10px;
 }
 
 .flex{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .flex > ul{
@@ -179,4 +181,42 @@ h2{
 .search:hover{
     transform: translateY(-10px);  
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+#comparison-container {
+    margin-top: 1rem;
+    padding: .5rem;
+    background-color: #0f0779;
+    border-radius: 5px;
+    width: 80%;
+    overflow-x: auto;
+}
+
+#comparison-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#comparison-container th, #comparison-container td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    
+}
+
+#comparison-container th {
+    background-color: #ac0404;
+}
+
+.compare-btn{
+    background-color: #b34506;
+    border: none;
+    border-radius: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bold;
+    color: #fff;
+}
+.compare-btn:hover{  
+    background-color: green;
 }
